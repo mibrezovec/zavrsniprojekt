@@ -16,6 +16,15 @@
 		<![endif]-->
 	</head>
 	<body>		
+		
+		<div class="topnav" id="myTopnav">
+			<a href="index.html">Naslovnica</a>
+				<a href="my_works.html">Radovi</a>
+				<a href="about_me.html">O meni</a>
+				<a href="contact.html">Kontakt</a>
+		    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+		</div>
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12 header">
@@ -23,15 +32,7 @@
 					<p>Contact</p>
 				</div>
 			</div>
-			<div class="row">
-				<ul class="main-menu">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about_me.html">About me</a></li>
-					<li><a href="my_works.html">My works</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</div>
-						
+		
 			<div class="section">
 				<h1>Social media</h1>
 				<div class="row square-blocks">
@@ -111,20 +112,30 @@
 					<button type="submit" class="btn btn-default">Send</button>
 				</form>
 			</div>			
-			<div class="row footer">
-				<img src="img/footer_title.png">
+			<footer class="footer">
 				<div class="col-xs-12">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about_me.html">About me</a></li>
-						<li><a href="my_works.html">My works</a></li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="index.html">Naslovnica</a></li>
+						<li><a href="my_works.html">Radovi</a></li>
+						<li><a href="about_me.html">O meni</a></li>
+						<li><a href="contact.html">Kontakt</a></li>
 					</ul>
 				</div>
-			</div>			
+				<p> Copyright © Miriam Brezovec</p>
+			</footer>			
 		</div>			
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>		
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="lightbox/js/lightbox.js"></script>
+		<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+		</script>
 	</body>
 </html>
